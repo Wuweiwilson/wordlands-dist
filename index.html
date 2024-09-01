@@ -10,6 +10,14 @@
     <!-- End Google Tag Manager -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5daef1a1-7a1d-4f60-92dc-9de4ddec2ddb" type="text/javascript" async></script>
 
+    <script>
+      window.addEventListener('beforeunload', function() {
+        window.dataLayer.push({
+          event: 'beforeunload'
+        });
+      });
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
