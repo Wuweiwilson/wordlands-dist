@@ -13,7 +13,11 @@
     <script>
       window.addEventListener('beforeunload', function() {
         window.dataLayer.push({
-          event: 'beforeunload'
+          event: 'beforeunload',
+          situation: window.wordlandsSituation.name,
+          turn: window.wordlandsSituation.turn,
+          season: window.wordlandsSituation.season,
+          time: performance.now() / 1000,
         });
       });
     </script>
